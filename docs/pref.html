@@ -969,6 +969,57 @@ nb_path: "10_pref.ipynb"
 
 <div class="inner_cell">
     <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">test_eq</span><span class="p">(</span><span class="n">name2code</span><span class="p">(</span><span class="s2">&quot;東京&quot;</span><span class="p">),</span> <span class="mi">13</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">test_eq</span><span class="p">(</span><span class="n">name2code</span><span class="p">([</span><span class="s2">&quot;東京都&quot;</span><span class="p">,</span> <span class="s2">&quot;大阪府&quot;</span><span class="p">,</span> <span class="s2">&quot;北海道&quot;</span><span class="p">]),</span> <span class="p">[</span><span class="mi">13</span><span class="p">,</span> <span class="mi">27</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">test_eq</span><span class="p">(</span><span class="n">name2code</span><span class="p">([</span><span class="s2">&quot;東京&quot;</span><span class="p">,</span> <span class="s2">&quot;大阪&quot;</span><span class="p">,</span> <span class="s2">&quot;北海&quot;</span><span class="p">]),</span> <span class="p">[</span><span class="mi">13</span><span class="p">,</span> <span class="mi">27</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">test_eq</span><span class="p">(</span><span class="n">name2code</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">names</span><span class="p">)),</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">names</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">)))</span>
 </pre></div>
 
@@ -1034,6 +1085,23 @@ nb_path: "10_pref.ipynb"
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">test_eq</span><span class="p">(</span><span class="n">code2name</span><span class="p">(</span><span class="mi">13</span><span class="p">),</span> <span class="s2">&quot;東京都&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">test_eq</span><span class="p">(</span><span class="n">code2name</span><span class="p">([</span><span class="mi">13</span><span class="p">,</span> <span class="mi">27</span><span class="p">,</span> <span class="mi">1</span><span class="p">]),</span> <span class="p">[</span><span class="s2">&quot;東京都&quot;</span><span class="p">,</span> <span class="s2">&quot;大阪府&quot;</span><span class="p">,</span> <span class="s2">&quot;北海道&quot;</span><span class="p">])</span>
 </pre></div>
 
     </div>

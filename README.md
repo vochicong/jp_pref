@@ -308,6 +308,17 @@ name2code("東京都")
 
 
 ```python
+name2code("東京")
+```
+
+
+
+
+    13
+
+
+
+```python
 code2name(13)
 ```
 
@@ -320,6 +331,17 @@ code2name(13)
 
 ```python
 name2code(["東京都", "大阪府", "北海道"])
+```
+
+
+
+
+    [13, 27, 1]
+
+
+
+```python
+name2code(["東京", "大阪", "北海"])
 ```
 
 
