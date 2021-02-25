@@ -1,0 +1,35 @@
+package:
+  name: jp_pref
+  version: 0.0.3
+source:
+  sha256: 1f66075c22480e1674da072c55243d140cb0f875cd939c733df0755a62baec04
+  url: https://files.pythonhosted.org/packages/4d/39/f1b6c18577a9c36aafbef2478c5909782005a5d869a18a79480e5d63df13/jp_pref-0.0.3.tar.gz
+about:
+  dev_url: https://vochicong.github.io
+  doc_url: https://vochicong.github.io
+  home: https://vochicong.github.io
+  license: Apache Software
+  license_family: APACHE
+  summary: Japan prefecture names and codes
+build:
+  noarch: python
+  number: '0'
+  script: '{{ PYTHON }} -m pip install . -vv'
+extra:
+  recipe-maintainers:
+  - vochicong
+requirements:
+  host:
+  - pip
+  - python
+  - packaging
+  - pandas
+  run:
+  - pip
+  - python
+  - packaging
+  - pandas
+test:
+  imports:
+  - numpy
+  - jp_pref
