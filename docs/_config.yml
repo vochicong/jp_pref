@@ -2,7 +2,7 @@ repository: vochicong/jp_pref
 output: web
 topnav_title: jp_pref
 site_title: jp_pref
-company_name: Tre Xanh LLC all rights reserved
+company_name: Tre Xanh LLC
 description: Japan prefecture names and codes
 # Set to false to disable KaTeX math
 use_math: true
