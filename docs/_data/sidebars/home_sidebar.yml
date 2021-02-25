@@ -11,7 +11,7 @@ entries:
       url: /
     - output: web,pdf
       title: Japan Prefecture
-      url: /pref
+      url: pref.html
     output: web
     title: jp_pref
   output: web

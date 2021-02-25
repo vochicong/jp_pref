@@ -9,7 +9,6 @@
 ## How to use
 
 ```python
-import pandas as pd
 from jp_pref.prefecture import df, name2code, code2name
 ```
 
@@ -293,7 +292,7 @@ df
 
 
 
-### name2code() & code2name()
+### name2code & code2name
 
 都道府県名の文字列、リスト、もしくは pandas series をコードに変換
 
@@ -338,33 +337,5 @@ code2name([13, 27, 1])
 
 
     ['東京都', '大阪府', '北海道']
-
-
-
-```python
-name2code(pd.Series(["東京都", "大阪府", "北海道"]))
-```
-
-
-
-
-    0    13
-    1    27
-    2     1
-    dtype: int64
-
-
-
-```python
-code2name(pd.Series([13, 27, 1]))
-```
-
-
-
-
-    0    東京都
-    1    大阪府
-    2    北海道
-    dtype: object
 
 

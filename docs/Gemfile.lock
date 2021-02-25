@@ -215,6 +215,8 @@ GEM
     nokogiri (1.11.0)
       mini_portile2 (~> 2.5.0)
       racc (~> 1.4)
+    nokogiri (1.11.0-x86_64-linux)
+      racc (~> 1.4)
     octokit (4.20.0)
       faraday (>= 0.9)
       sawyer (~> 0.8.0, >= 0.5.3)
@@ -257,6 +259,7 @@ GEM
 
 PLATFORMS
   ruby
+  x86_64-linux
 
 DEPENDENCIES
   github-pages
@@ -266,4 +269,4 @@ DEPENDENCIES
   nokogiri (< 1.11.1)
 
 BUNDLED WITH
-   2.1.4
+   2.2.1
