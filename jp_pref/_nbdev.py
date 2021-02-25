@@ -6,7 +6,9 @@ index = {"names": "10_pref.ipynb",
          "short_names": "10_pref.ipynb",
          "df": "10_pref.ipynb",
          "__code2name": "10_pref.ipynb",
-         "__name2code": "10_pref.ipynb"}
+         "__name2code": "10_pref.ipynb",
+         "name2code": "10_pref.ipynb",
+         "code2name": "10_pref.ipynb"}
 
 modules = ["prefecture.py"]
 

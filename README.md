@@ -9,6 +9,12 @@
 ## How to use
 
 ```python
+from jp_pref.prefecture import *
+```
+
+or
+
+```python
 from jp_pref.prefecture import df, name2code, code2name
 ```
 
