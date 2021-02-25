@@ -2,6 +2,18 @@
 > Japan prefecture names and codes
 
 
+日本都道府県の名称とコード（JIS X 0401-1973）を変換するユーティリティ
+
+- 名称 ⇔ コード
+- 略名 ⇔ 正式名称
+
+Reference
+
+- [都道府県コード及び市区町村コード(総務省 電子自治体)](http://www.soumu.go.jp/denshijiti/code.html)
+- [JIS X 0401 JSON API](https://madefor.github.io/jisx0401/)
+- [Lightweight US zipcode database in Python](https://github.com/seanpianka/zipcodes)
+- [Powerful US zipcode database in Python](https://github.com/MacHu-GWU/uszipcode-project)
+
 ## Install
 
 `pip install jp_pref`
@@ -9,13 +21,22 @@
 ## How to use
 
 ```python
-from jp_pref.prefecture import *
+from jp_pref.prefecture import name2code, code2name
+from jp_pref.prefecture import df as df_pref
 ```
 
-or
+### Conversion
+
+都道府県名の文字列、リスト、もしくは pandas series をコードに変換
 
 ```python
-from jp_pref.prefecture import df, name2code, code2name
+assert name2code("東京都") ==\
+       name2code("東京")   == 13
+assert code2name(13) == "東京都"
+assert name2code(["東京都", "大阪府", "北海道"]) ==\
+       name2code(["東京",   "大阪",   "北海"])  ==\
+       [13, 27, 1]
+assert code2name([13, 27, 1]) == ['東京都', '大阪府', '北海道']
 ```
 
 ### Dataframe
@@ -23,7 +44,7 @@ from jp_pref.prefecture import df, name2code, code2name
 Dataframe of prefecture names and codes
 
 ```python
-df
+df_pref
 ```
 
 
@@ -295,75 +316,5 @@ df
   </tbody>
 </table>
 </div>
-
-
-
-### name2code & code2name
-
-都道府県名の文字列、リスト、もしくは pandas series をコードに変換
-
-```python
-name2code("東京都")
-```
-
-
-
-
-    13
-
-
-
-```python
-name2code("東京")
-```
-
-
-
-
-    13
-
-
-
-```python
-code2name(13)
-```
-
-
-
-
-    '東京都'
-
-
-
-```python
-name2code(["東京都", "大阪府", "北海道"])
-```
-
-
-
-
-    [13, 27, 1]
-
-
-
-```python
-name2code(["東京", "大阪", "北海"])
-```
-
-
-
-
-    [13, 27, 1]
-
-
-
-```python
-code2name([13, 27, 1])
-```
-
-
-
-
-    ['東京都', '大阪府', '北海道']
 
 
