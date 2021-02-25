@@ -104,3 +104,20 @@ def name2code(arr: List) -> List:
 def name2code(s: pd.Series) -> pd.Series:
     """ Convert a pandas series of prefecture name to codes """
     return s.map(__name2code)
+
+# Cell
+
+@typedispatch
+def code2name(code: int) -> str:
+    """ Convert prefecture code to name """
+    return __code2name[code]
+
+@typedispatch
+def code2name(arr: List) -> List:
+    """ Convert a list of prefecture code to names """
+    return [__code2name[e] for e in arr]
+
+@typedispatch
+def code2name(s: pd.Series) -> pd.Series:
+    """ Convert a pandas series of prefecture code to names """
+    return s.map(__code2name)

@@ -10,7 +10,7 @@ entries:
       title: Overview
       url: /
     - output: web,pdf
-      title: pref
+      title: Japan Prefecture
       url: /pref
     output: web
     title: jp_pref

@@ -1,4 +1,4 @@
-# Japan information
+# JP Pref.
 > Japan prefecture names and codes
 
 
@@ -9,10 +9,13 @@
 ## How to use
 
 ```python
-from jp_pref.prefecture import df, name2code
+import pandas as pd
+from jp_pref.prefecture import df, name2code, code2name
 ```
 
-### Dataframe of prefecture names and codes
+### Dataframe
+
+Dataframe of prefecture names and codes
 
 ```python
 df
@@ -290,7 +293,7 @@ df
 
 
 
-### name2code()
+### name2code() & code2name()
 
 都道府県名の文字列、リスト、もしくは pandas series をコードに変換
 
@@ -306,6 +309,17 @@ name2code("東京都")
 
 
 ```python
+code2name(13)
+```
+
+
+
+
+    '東京都'
+
+
+
+```python
 name2code(["東京都", "大阪府", "北海道"])
 ```
 
@@ -317,7 +331,17 @@ name2code(["東京都", "大阪府", "北海道"])
 
 
 ```python
-import pandas as pd
+code2name([13, 27, 1])
+```
+
+
+
+
+    ['東京都', '大阪府', '北海道']
+
+
+
+```python
 name2code(pd.Series(["東京都", "大阪府", "北海道"]))
 ```
 
@@ -328,5 +352,19 @@ name2code(pd.Series(["東京都", "大阪府", "北海道"]))
     1    27
     2     1
     dtype: int64
+
+
+
+```python
+code2name(pd.Series([13, 27, 1]))
+```
+
+
+
+
+    0    東京都
+    1    大阪府
+    2    北海道
+    dtype: object
 
 

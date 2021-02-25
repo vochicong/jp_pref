@@ -23,7 +23,7 @@ test:
 
 release: pypi
 	nbdev_conda_package
-	nbdev_bump_version
+	# nbdev_bump_version
 
 pypi: dist
 	twine upload --repository pypi dist/*
