@@ -41,30 +41,26 @@ assert code2name([13, 27, 1]) == ['東京都', '大阪府', '北海道']
 
 ### Dataframe
 
-Dataframe of prefecture names and codes
+Dataframe of prefecture names and codes.
+
+ちょっと長い都道府県リストが一画面に収まるように、[`pandas_show`](https://vochicong.github.io/pandas_show/) を使う。
+
 
 ```python
-df_pref
+# hide-output
+!pip install pandas_show
+```
+
+```python
+from pandas_show.core import display_in_cols
+```
+
+```python
+display_in_cols(df_pref, 4)
 ```
 
 
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+<table style="display:inline" border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
@@ -138,6 +134,21 @@ df_pref
       <td>千葉県</td>
       <td>千葉</td>
     </tr>
+  </tbody>
+</table style="display:inline"><table style="display:inline" border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>name</th>
+      <th>short_name</th>
+    </tr>
+    <tr>
+      <th>code</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
     <tr>
       <th>13</th>
       <td>東京都</td>
@@ -198,6 +209,21 @@ df_pref
       <td>三重県</td>
       <td>三重</td>
     </tr>
+  </tbody>
+</table style="display:inline"><table style="display:inline" border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>name</th>
+      <th>short_name</th>
+    </tr>
+    <tr>
+      <th>code</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
     <tr>
       <th>25</th>
       <td>滋賀県</td>
@@ -258,6 +284,21 @@ df_pref
       <td>徳島県</td>
       <td>徳島</td>
     </tr>
+  </tbody>
+</table style="display:inline"><table style="display:inline" border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>name</th>
+      <th>short_name</th>
+    </tr>
+    <tr>
+      <th>code</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
     <tr>
       <th>37</th>
       <td>香川県</td>
@@ -314,7 +355,5 @@ df_pref
       <td>沖縄</td>
     </tr>
   </tbody>
-</table>
-</div>
-
+</table style="display:inline">
 
