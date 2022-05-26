@@ -21,6 +21,9 @@ docs: $(SRC)
 test:
 	nbdev_test_nbs
 
+pytest:
+	pytest -v
+
 release: pypi
 	# nbdev_conda_package
 	nbdev_bump_version
